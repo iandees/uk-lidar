@@ -1,4 +1,5 @@
-grids=$(ls | cut -c -15 | sort | uniq)
+# For a filename like `LIDAR-DTM-2M-TG43sw.zip`, take the first N chars and sort/group:
+grids=$(ls | cut -c -17 | sort | uniq)
 
 for grid in $grids; do
     echo "gdal_merge.py \
