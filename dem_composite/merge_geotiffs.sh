@@ -22,4 +22,4 @@ for grid in $grids; do
         -o ${idir}/${grid}.tif ${idir}/${grid}*.tif \
     && echo '${idir}/${grid}.tif'"
 done \
-| xargs -I {} -n 1 -P 16 sh -c '{}'
+| xargs -I {} -n 1 -P 12 sh -c '{}'
